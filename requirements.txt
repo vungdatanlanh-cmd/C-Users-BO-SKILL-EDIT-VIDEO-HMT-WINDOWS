@@ -1,0 +1,9 @@
+numpy
+faster-whisper
+huggingface_hub
+opencv-python<5
+onnxruntime
+pillow
+playwright
+skia-python
+av<19
