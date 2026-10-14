@@ -1,0 +1,79 @@
+/*
+Theme Name: Phong Thủy Đất Việt
+Description: Giao diện phong cách cổ điển (cuộn giấy, đỏ đô – vàng đồng) cho trang xem tử vi, phong thủy. Kèm trang Lập lá số tử vi.
+Author: HMT
+Version: 1.0.0
+Text Domain: phongthuydatviet
+*/
+:root{--red:#8c1c13;--red-d:#6b1109;--gold:#c8a04a;--paper:#f5e9cc;--paper-d:#e7d5a8;--ink:#3b2a1a;--link:#1a6fd6;--olive:#8a7a1e}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Be Vietnam Pro",Roboto,Arial,sans-serif;color:var(--ink);background:#fbf6ea;line-height:1.6}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+/* header */
+.site-head{background:linear-gradient(#9b2116,var(--red-d));color:#fff;border-bottom:4px solid var(--gold)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;flex-wrap:wrap}
+.site-title{font-size:26px;font-weight:800;letter-spacing:.5px;color:#fff;font-family:Georgia,"Times New Roman",serif}
+.site-title small{display:block;font-size:12px;font-weight:400;color:#f2d89a;letter-spacing:0}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap}
+.main-nav a{display:block;color:#fff;padding:10px 14px;border-radius:4px;font-weight:600}
+.main-nav a:hover,.main-nav .current-menu-item>a{background:rgba(255,255,255,.15);text-decoration:none}
+/* layout */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;padding:20px 0 40px}
+.crumbs{font-size:15px;margin:14px 0 4px;color:#555}.crumbs a{color:var(--link)}.crumbs span{margin:0 6px}
+.card{background:#fff;border:1px solid #eadfc4;border-radius:6px;padding:20px}
+.entry h1,.entry h2{font-family:Georgia,serif;color:var(--red)}
+/* sidebar */
+.widget{margin-bottom:20px;background:#fff;border:1px solid #eadfc4;border-radius:4px;overflow:hidden}
+.widget-title{margin:0;background:linear-gradient(#a2281b,var(--red-d));color:#f8e6b0;text-align:center;font-family:Georgia,serif;font-size:20px;padding:10px;border-bottom:3px solid var(--gold)}
+.widget ul{list-style:none;margin:0;padding:6px 14px}
+.widget li{border-bottom:1px solid #e3d6b6}.widget li:last-child{border:0}
+.widget li a{display:block;padding:11px 8px;color:var(--ink);font-size:17px}
+.hot{background:#ffd400;color:#c0392b;font-size:11px;font-weight:800;padding:1px 5px;border-radius:3px;margin-left:6px}
+/* hero + tools */
+.hero{background:radial-gradient(circle at 50% 0,#b02b1c,var(--red-d));color:#fff;text-align:center;padding:48px 16px;border-bottom:4px solid var(--gold)}
+.hero h1{margin:0 0 10px;font-family:Georgia,serif;font-size:clamp(26px,5vw,42px);color:#f8e6b0}
+.hero p{margin:0 auto 22px;max-width:640px;color:#fde9c3}
+.btn{display:inline-block;background:var(--olive);color:#fff;border:0;border-radius:4px;padding:14px 34px;font-size:20px;font-weight:700;cursor:pointer}
+.btn:hover{background:#6f6216;text-decoration:none}
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:28px 0}
+.tool{display:block;background:#fff;border:1px solid #eadfc4;border-top:4px solid var(--red);border-radius:4px;padding:18px;color:var(--ink)}
+.tool:hover{box-shadow:0 4px 14px rgba(0,0,0,.12);text-decoration:none}
+.tool b{display:block;font-size:18px;color:var(--red);font-family:Georgia,serif}
+.posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.post-card{background:#fff;border:1px solid #eadfc4;border-radius:4px;overflow:hidden}
+.post-card .pad{padding:14px}.post-card h3{margin:0 0 6px;font-size:18px}
+/* scroll form */
+.scroll{position:relative;margin:30px 0 20px;padding:60px 56px 40px;background:
+  radial-gradient(ellipse at center,rgba(255,255,255,.35),transparent 70%),
+  repeating-linear-gradient(45deg,rgba(150,110,40,.04) 0 6px,transparent 6px 12px),var(--paper);
+  border-top:14px solid #7a5a2a;border-bottom:14px solid #7a5a2a;box-shadow:inset 0 0 40px rgba(120,80,20,.25)}
+.scroll::before,.scroll::after{content:"";position:absolute;top:-14px;bottom:-14px;width:26px;background:linear-gradient(90deg,#4a3418,#a98748 40%,#4a3418);border-radius:12px}
+.scroll::before{left:-6px}.scroll::after{right:-6px}
+.scroll-title{position:absolute;top:-24px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;border:3px solid var(--gold);border-radius:6px;padding:8px 40px;font-family:Georgia,serif;font-size:26px;font-weight:800;white-space:nowrap;box-shadow:0 3px 8px rgba(0,0,0,.3)}
+.tv-form label.f{display:block;font-weight:600;margin:14px 0 6px;font-size:18px}
+.tv-form input[type=text],.tv-form input[type=number],.tv-form select{width:100%;padding:12px;font-size:18px;border:1px solid #cdbf9a;border-radius:3px;background:#fffdf7;color:var(--ink)}
+.row{display:grid;gap:12px}.row.c3{grid-template-columns:1fr 1.3fr 1.3fr}.row.c2{grid-template-columns:1fr 1fr}
+.radios{display:flex;gap:22px;margin-top:8px;font-size:19px}.radios label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.tv-form .submit{text-align:center;margin-top:24px}
+/* chart */
+.tv-chart{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--red);background:#fffdf7;margin:18px 0}
+.tv-cell{min-height:170px;border:1px solid #c9b78a;padding:6px;display:flex;flex-direction:column;position:relative}
+.tv-cell.is-menh{background:#fff4d6}
+.tv-cell-top{display:flex;justify-content:space-between;font-size:13px;color:#7a6a45}
+.tv-cc{font-weight:700;color:var(--red)}
+.tv-stars{flex:1;padding-top:4px}
+.tv-s{font-size:14px;line-height:1.35}
+.tv-chinh{font-weight:800;color:var(--red);font-size:15px}
+.tv-phu{color:#245c2f}.tv-sat{color:#222}
+.tv-hoa{font-style:normal;background:#c0392b;color:#fff;border-radius:3px;padding:0 4px;font-size:11px}
+.tv-cung{text-align:center;font-weight:800;font-size:13px;letter-spacing:.3px;border-top:1px dashed #c9b78a;padding-top:3px;color:#5a3e17}
+.tv-center{grid-column:2/4;grid-row:2/4;padding:14px 18px;border:1px solid #c9b78a;background:#fbf1d6}
+.tv-center h3{margin:0 0 8px;text-align:center;font-family:Georgia,serif;color:var(--red)}
+.tv-center p{margin:3px 0;font-size:15px}
+.tv-note{font-size:13px;color:#7a6a45}
+/* footer */
+.site-foot{background:var(--red-d);color:#f0dcae;text-align:center;padding:24px 16px;border-top:4px solid var(--gold);font-size:15px}
+.site-foot a{color:#fff}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.scroll{padding:56px 22px 30px}.scroll-title{font-size:20px;padding:6px 20px}.tv-chart{grid-template-columns:repeat(4,minmax(0,1fr))}.tv-cell{min-height:130px;padding:3px}.tv-s{font-size:11px}.tv-chinh{font-size:12px}.tv-cung{font-size:10px}.tv-center p{font-size:12px}.row.c3{grid-template-columns:1fr}}
